@@ -1,0 +1,24 @@
+/* specificity of '>' is more than " ". thus > is preferred */
+/* > is used for children(only one level lower than parent) */
+/* " " changes style for all descendants irrespective of their level*/
+/* '+' Immediate sibling*/
+/* '~' General sibling */
+ul ol{
+    color: blue;
+}
+ul ul{
+    color: hotpink;
+}
+
+ol>li{
+    background-color:lightblue;
+    color: black;
+}
+
+li+li{
+    background-color: aquamarine;
+}
+/* General Sibling */
+/* li~li{
+    background-color:gainsboro;
+} */

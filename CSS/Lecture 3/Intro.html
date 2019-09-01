@@ -1,0 +1,39 @@
+<!-- preference 1.Inline 2.Id 3.Classes 4.Element 5.Browser -->
+<!-- For same preference like in internal and external top down approach is followed -->
+<!-- Lower ones are followed  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- External styling -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Internal styling -->
+    <style>
+        h1
+        {
+            color:darkred;
+        }
+        p{
+            background-color:yellow;
+            color:red;
+        }
+    </style>
+</head>
+<body style="background-color:goldenrod; ">
+    <h1>This is our paragraph</h1>
+    <!-- Inline styling -->
+    <p style="font-size: 20px; color: blue; background-color: cyan;">
+        This is para 1<br>
+        Hello Everyone <br>
+        We are changing styles here
+    </p>
+
+    <p class="right big" id="two" style="background-color: khaki;"> This is second para<br></p>
+    <p class="left small" id="three">This is third para <br></p>
+    <p class="right small" id="four">This is 4th para<br></p>
+    <p class="left big" id="five">This is 5th para<br></p>
+</body>
+</html>

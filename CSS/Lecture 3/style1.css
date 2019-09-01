@@ -1,0 +1,40 @@
+/* External css File */
+h1
+{
+    color:darkred;
+}
+p{
+    font-size: 25px;
+    background-color:yellow;
+    color: white;
+}
+/* Class selector */
+.right{
+    text-align: right;
+}
+.left
+{
+    text-align: left;
+}
+.big{
+    font-size: 24px;
+}
+.small
+{
+    font-size: 12px;
+}
+
+/* ID selector */
+#two
+{
+    background-color: brown;
+}
+#three
+{
+    background-color: aqua;
+}
+
+/* Universal selector */
+*{
+    background-color: lightblue;
+}

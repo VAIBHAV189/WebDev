@@ -1,0 +1,23 @@
+div[class]{
+    background-color: black;
+    color:white;
+    font-size: 24px;
+}
+p[class="left"]
+{
+    background-color: aquamarine;
+    color:royalblue;
+}
+[href]
+{
+    background-color: aliceblue;
+    color:black;
+}
+p[id="three"]
+{
+    background-color: pink;
+}
+input[type="text"]
+{
+    width: 600px;
+}

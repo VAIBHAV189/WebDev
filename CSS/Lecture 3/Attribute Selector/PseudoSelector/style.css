@@ -1,0 +1,85 @@
+div{
+    background-color: aliceblue;
+    color: rebeccapurple
+}
+
+div:hover{
+    background-color: yellow;
+    font-size: 28px;
+}
+/* Click karna pe active(jb tak click karke rakhoge tb tak color changed rahega */
+div:active{
+    background-color: tomato;
+    color: black;
+    font-size: 15px;
+}
+/* BODY ACTIVE bnane ka tareeka */
+:active{
+    background-color: skyblue;
+}
+/* Click karne par color change kar deta hai */
+
+input:focus{
+    background-color: rgb(128, 190, 240);
+
+}
+:empty{
+    background-color: lightpink;
+}
+/* Pseudo class link(counterpart visited */
+a:link{
+    color:brown;
+}
+a:visited{
+    color:blueviolet;
+}
+
+li:first-child{
+    color:purple;
+}
+li:last-child{
+    color:darkcyan;
+}
+
+span:only-child{
+    background-color:yellowgreen;
+}
+
+/* Targetting nth child */
+/* odd even or number or expression */
+/* beech mei ek alag element aa gyi to cycle wapas start hogi */
+/* li:nth-child(-2n+6){
+    color:violet;
+} */
+
+/* Ismei dusrer element ko ignore marega but cycle wapas start nhi hogi */
+/* li:nth-of-type(2n+3)
+{
+    color:green;
+} */
+
+/* neeche se start hoga color change karna */
+/* li:nth-last-child(-2n+6)
+{
+    color: lightgrey;
+} */
+
+
+ li:nth-last-of-type(-2n+6)
+ {
+     color: darkkhaki;
+ }
+
+ /* String Matching */
+ [src^='http:']
+ {
+     background-color: darkmagenta;
+ }
+ [src$=' .pdf']
+ {
+     background-color: :darkorange;
+ }
+
+ ul>*>li{
+     background-color: cornflowerblue;
+ }
