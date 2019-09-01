@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#" method="POST"> <!--action=# means do no action and method mei GET se URL mei sb visible hoga POST mei sb hidden rehta hai-->
+        <fieldset>
+            <legend align="center">Imp Questions</legend>
+                <label for="username">Username :</label> <!--Label pe click karne se uske input wale pe automatically shift ho jata hai-->
+                <input type="text" name="username" placeholder="username" required id="username">
+                <br>
+                <label for="password">Password: </label> 
+                <input type="password" name="password" placeholder="password" required id="password">
+                <br>
+            
+                <br>
+                Gender:  
+                <input type="radio" name="gender" id="Male">
+                <label for="Male">Male</label>
+                <input type="radio" name="gender" id="Female">
+                <label for="Female">Female</label>
+                <br>
+                Date: <input type="date" name="date" placeholder="date">
+                <br>
+                    Email: <input type="email" name="email" placeholder="email">
+                    <br>
+                    Telephone: <input type="tel" name="tel" placeholder="telephone">
+                    <br>
+                    Color: <input type="Color" namer="color" placeholder="Color">
+                    <br>
+                    <input type="radio" name="test">A<br>
+                    <input type="radio" name="test">B<br>
+                    <input type="radio" name="test">C<br>
+                    <!-- Ek name ka ek h select hoga -->
+                    <input type="radio" name="test1">D<br>
+                    <input type="radio" name="test2">E<br>
+                    <!-- checkbox mei same name k liye multiple choices select kar sakte ho -->
+                    <input type="checkbox" name="test3">F<br>
+                    <input type="checkbox" name="test3">G<br>
+        </fieldset>
+        <fieldset>
+            <legend align="center">Optional</legend>
+                <h3>Select countries</h3><br>
+
+                <select mutliple>
+                    <!-- Option cannot be selected  -->
+                    <option disabled selected>Continents</option>
+                    <option selected>America</option>
+                    <option>Asia</option>
+                    <option>Europe</option>
+                    <option>Northamerica</option>
+                    <option>Australia</option>
+                </select><br>
+
+                <h3>Select Movies</h3><br>
+                <select>
+                    <optgroup label="Hollywood movies">
+                            <option>Avengers</option>
+                            <option>Harry Potter</option>
+                    </optgroup>
+                    <optgroup label="Bollywood Movies">
+                            <option>3 Idiots</option>
+                            <option>Badla</option>
+                    </optgroup>
+                    
+                </select>
+                <br>
+                <textarea rows="10" cols="30"></textarea>
+                <br>
+                <input type="submit" name="Submit!">
+            </fieldset>
+    </form> 
+
+
+</body>
+</html>
