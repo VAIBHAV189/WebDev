@@ -26,7 +26,7 @@ input:focus{
 :empty{
     background-color: lightpink;
 }
-/* Pseudo class link(counterpart visited */
+/* Pseudo class link(counterpart visited )*/
 a:link{
     color:brown;
 }
@@ -75,9 +75,9 @@ span:only-child{
  {
      background-color: darkmagenta;
  }
- [src$=' .pdf']
+ [src$='.pdf']
  {
-     background-color: :darkorange;
+     background-color: darkorange;
  }
 
  ul>*>li{
