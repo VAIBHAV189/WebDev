@@ -1,0 +1,25 @@
+/* Clear prevents collapsing */
+img{
+    float:left;
+    height:50px;
+    width: 50px;
+    padding-right: 20px;
+
+}
+.wrap{
+    border: 2px solid black
+}
+
+#para
+{
+    float: left;
+    padding-left: 40px;
+}
+/* br{
+    clear:left;
+} */
+.wrap::after{
+    content: " ";
+    display: table;
+    clear: left;
+}

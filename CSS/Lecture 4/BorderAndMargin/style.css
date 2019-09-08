@@ -1,0 +1,38 @@
+div{
+    height:30px;
+}
+/* top right bottom left order*/
+/* .wrap{ */
+    /* border-style: solid;
+    border-width: 10px;
+    border-color: red; */
+
+
+    /* border-top-style: solid;
+    border-bottom-style: solid;
+    border-right-style: dashed;
+    border-left-style: groove; */
+
+    /* border-style: solid dashed groove dotted; */
+
+    /* border-style: solid dashed dotted;
+    border-color: aliceblue red blue green; */
+
+/* } */
+.wrap{
+    background-color: beige;
+    border: 4px solid red;
+    height:80px;
+    margin:auto;
+}
+.box{
+    background-color: black;
+    color: whitesmoke;
+    border: 3px solid greenyellow;
+    /* margin-top: 30px; */
+    margin: 25px 10px;
+
+    height:20px;
+    padding: 5px;
+
+}

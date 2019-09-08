@@ -1,0 +1,27 @@
+html{
+    background-color:green;
+
+}
+
+:root{
+    background-color: yellow;
+}
+body{
+    font-size: 10px;
+
+}
+html{
+    font-size: 8px;
+}
+
+#para1{
+    font-size: 3ex;
+}
+
+#para2{
+    font-size: 3em;
+}
+#para3
+{
+    font-size: 3rem;
+}

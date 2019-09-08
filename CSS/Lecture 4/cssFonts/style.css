@@ -1,0 +1,20 @@
+#para1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    text-shadow: 3px 4px 1px red, -5px -4px 2px lightgreen;     /*horizontal vertical blur color of shadow*/
+    /*negative se aage aur upar aata hai*/
+}
+
+#para2{
+    font-style: oblique;
+    font-weight: bold; /*bold 700 */
+}
+
+#para3{
+    font-weight: 900;
+    font-size: 30px;
+    font-variant: small-caps; /*First char of every word is larger*/
+}
+#para0{
+    font: italic bold 24px/3  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /*24px/3 mei 3 ka matlb hai kitti lines ki spacing hai*/
+}

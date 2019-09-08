@@ -53,10 +53,10 @@ span:only-child{
 } */
 
 /* Ismei dusrer element ko ignore marega but cycle wapas start nhi hogi */
-/* li:nth-of-type(2n+3)
+li:nth-of-type(2)
 {
-    color:green;
-} */
+    color: orangered;
+}
 
 /* neeche se start hoga color change karna */
 /* li:nth-last-child(-2n+6)
@@ -65,10 +65,10 @@ span:only-child{
 } */
 
 
- li:nth-last-of-type(-2n+6)
+ /* li:nth-last-of-type(-2n+6)
  {
      color: darkkhaki;
- }
+ } */
 
  /* String Matching */
  [src^='http:']
@@ -80,6 +80,6 @@ span:only-child{
      background-color: darkorange;
  }
 
- ul>*>li{
+ /* ul>*>li{
      background-color: cornflowerblue;
- }
+ } */

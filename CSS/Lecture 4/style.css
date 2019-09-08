@@ -1,0 +1,28 @@
+input:enabled{
+    background-color: lightyellow;
+}
+input:disabled{
+    background-color: gray;
+}
+/* Increase size of checked radio button */
+input:checked+label{
+    font-size: 30px;
+}
+/* Pseudo Selector */
+/* Agar first letter ko dusre lines k starting mei bh dalna ho */
+/* p::first-letter{
+    font-size: 55px;
+    float: left;
+}
+
+p::first-line{
+    color: blue;
+} */
+
+#para1::before{
+    content: '\1F4DE' /*Using unicode we can display symbols*/
+}
+#para1
+{
+    border: 1px solid black;
+}

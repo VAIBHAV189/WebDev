@@ -1,0 +1,39 @@
+div{
+    height: 50px;
+    border: 2px solid black;
+    margin:10px;
+}
+.color
+{
+    background:lightcoral;
+}
+body{
+    position: relative;
+    top:60px;
+    left: 60px;
+}
+/* Its original posn remains intact */
+#seven{
+    position: relative;
+    top: 40px;
+    left:30px;
+}
+#eleven{
+    position: absolute; /*with respect to viewport Nearest aboslute parent k respect mei hota hai. Koi positioned na ho to html h hai ref*/
+    top:50px;
+    left:30px;
+}
+/* Fixed ka by default browser ref lega aur nav bar pe humesha aate rahega */
+#fourteen{
+    position: fixed;
+    top:30px;
+
+}
+#fifteen,
+#sixteen,
+#eighteen,
+#twenty{
+    background: orange; 
+    position: sticky; /*Ek limit tak wo apni original posn se nhi move karega but uske baad wo bh fixed ki tarah behave karega*/
+    top:50px;
+}

@@ -1,0 +1,15 @@
+ul{
+    list-style-type: circle;
+  /*one way to add icon  list-style-image: url('image.jpg');*/
+}
+
+ul li{
+    border: 1px solid black;
+    list-style-position: outside; /* bullets ya image bahar ya andar karne k liye use kar sakte hain*/ 
+}
+/* ul li{
+    background-image: url('image.jpg'); 
+    background-repeat: no-repeat;  //Taki baar baar bdi si pics na har ek k liye
+    background-size: 15px 15px;
+    padding-left: 20px; // left se text 20 px right shift hoga
+} */

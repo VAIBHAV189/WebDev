@@ -1,0 +1,24 @@
+#cm,#mm,#in,#pc,#px,#pt{
+    background-color: lightblue;
+    height: 30px;
+    margin: 10px;
+    font-size: 24px;
+    }
+    #cm{
+    width: 21.16cm;
+    }
+    #mm{
+    width: 211.6mm;
+    }
+    #in{
+    width: 8.33in;
+    }
+    #pc{
+    width: 50pc;
+    }
+    #pt{
+    width: 600pt;
+    }
+    #px{
+    width: 800px;
+    }
