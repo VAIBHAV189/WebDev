@@ -1,0 +1,32 @@
+body{
+    background:url(background.jpg) no-repeat;
+    background-size: cover;
+}
+ul{
+    height: 50px;
+    width: 535px;
+    margin:auto;
+    position: absolute;
+    left:30%;
+    top:10%;
+    list-style-type: none;
+    text-align: center;
+    overflow:hidden;
+    background-color: rgba(20, 20, 20, 0.815);
+}
+li{
+    display:inline;
+    
+}
+li a{
+    position: relative;
+    top:8%;
+    padding:50px;
+    font-size:145%;
+    font-weight:600;
+    color: rgb(252, 247, 251);
+}
+
+li a:hover{
+    background-color: rgb(87, 90, 90);
+}

@@ -1,0 +1,43 @@
+.wrap{
+    height:100px;
+    width:900px;
+    margin:auto;
+    border:5px solid orangered;
+
+}
+
+.box{
+    height:100%;
+    width:100%;
+    background-color:lightpink;
+    animation-name: slide;
+    animation-duration: 2s;
+    animation-timing-function:cubic-bezier(1, 0.42, 0.21, 0.41);
+}
+
+/*To give animations */
+/*from to model*/
+
+/* @keyframes slide{
+    from{
+        width:0%;
+    }
+    to{
+        width:100%;
+    }
+} */
+
+/* % */
+
+@keyframes slide{
+    0%{
+        width:100%;
+    }
+    50%{
+        width:70%;
+    }
+    100%
+    {
+        width:0%;
+    }
+}

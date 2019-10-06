@@ -1,0 +1,53 @@
+.wrap{
+    height: 200px;
+    width:150px;
+    
+    background-color: skyblue;
+    /* transition-property:background-color; */
+    transition-property: all;
+    transition-duration: 1s;
+    /* Agar timing same rakhni hai to sirf wrap mei likh do duration */
+    transition-delay: 2s;
+    
+}
+
+body{
+    padding:100px;
+}
+.vegeta{
+    height:100px;
+    width:100px;
+    padding: 50px 30px;
+    /*Image ka transition karna hai */
+    transition-property: transform;
+    transition-duration: 2s;
+  
+
+}
+
+/* .wrap:hover .vegeta{
+    transform: skewY(45deg);
+    transform: skewX(45deg);
+    transform: rotateX(45deg);
+    transform: rotateY(45deg);
+    transform:scaleX(2);
+    transform:scaleY(2);
+    transform:scale(2);
+
+} */
+
+/* .wrap:hover{
+    height:400px;
+    width:300px;
+    background-color: aquamarine;
+    transition-property: background-color;
+    transition-property: all;
+    transition-duration: 3s;
+
+    
+} */
+
+.wrap:hover .vegeta{
+    transform:rotateZ(2turn) translate(100px,200px) scale(2); /* dont use commas to separate them*/
+
+}

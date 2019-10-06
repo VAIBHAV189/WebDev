@@ -1,0 +1,23 @@
+/* cover mei image zoom karke poore page ko cover kar dega aur image agar bdi hui to kat bh jayegi */
+/* contained mei image size adjust hoke center mei aa jayegi aur sath mei white border chhod jayegi uske side mei */
+.box{
+    font-size:40px;
+    border: 2px solid black;
+    /* background-image: url(bg_a.png),url(dbz.jpg); */
+    background-image: url(dbz.jpg);
+    color:lightyellow;
+    font-weight: 300;
+    height:500px;
+    overflow:scroll;
+    background-repeat: no-repeat;
+    /*background-position: 100px 200px;*/ /* To set position of image*/
+    
+    /* background-attachment: scroll; */
+    background-attachment: local;  /* background image will move now */
+    /* background-color: black; */
+    /* background: url(bg_a.png) red  no-repeat 200px 150px local; */
+    /* background-size: 1000px 500px; */
+
+    /* background-size: contain; */
+    background-size: cover;    
+}

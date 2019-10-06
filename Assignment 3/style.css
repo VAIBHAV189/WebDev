@@ -1,0 +1,30 @@
+body{
+    align-content: center;
+    background-color:rgb(171, 200, 243);
+}
+h2{
+    font-family:cursive;
+    color:rgb(34, 22, 4);
+    text-align: center;
+}
+.color
+{
+    background:black;
+    text-align: center; 
+    color:white;
+    border:2px solid lightgrey ;
+}
+p
+{
+    position: sticky;
+    top:0px;
+}
+div
+{
+    font-family:cursive;
+    text-align: center;
+}
+#end{
+    background-color:lightyellow;
+    border: 2px groove black;
+}

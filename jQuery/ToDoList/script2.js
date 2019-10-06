@@ -1,0 +1,49 @@
+$(document.body)
+    .append(
+        $('<input>')
+            .attr('id','newTask')
+    )
+    .append(
+        $('<button>')
+            .attr('id','addTask')
+            .text('Add')
+            .click(()=>
+            {
+                $('#taskList')
+                .append(
+                    $('<li>')
+                        .text($('#newTask').val())
+                        .append(
+                            $('<button>')
+                                .text('x')
+                                .click((event)=>{
+                                    // console.log(event.target);
+                                    // console.log($(event.target).parent())
+                                    $(event.target).parent().remove();
+                                })
+                        )
+                        .append(
+                            $('<button>')
+                                .text('Up')
+                                .attr('class','btn-up')
+                                .click((event)=>
+                                {
+                                    $(event.target).parent().insertBefore($(event.target).parent().prev());
+                                })
+                        )
+                        .append(
+                            $('<button>')
+                                .text('Down')
+                                .attr('class','btn-down')
+                                .click((event)=>
+                                {
+                                    $(event.target).parent().insertAfter($(event.target).parent().next());
+                                })
+                        )
+                )
+                
+            })
+    )
+    .append(
+        $('<ul>').attr('id','taskList')
+    )

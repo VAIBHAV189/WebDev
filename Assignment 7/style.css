@@ -1,0 +1,41 @@
+body
+{
+    background: url(backgroundimage.jpg);
+    background-size: cover;
+    font-family: cursive;
+}
+h1
+{
+    text-align: center;
+    font-size:50px;
+    color: rgb(125, 253, 183);
+}
+div
+{
+    position: absolute;
+    border: 3px solid rgb(162, 163, 162);
+    padding:20px;
+    left:33%;
+    top:30%;
+    color: rgb(237, 240, 86);
+    font-weight:900;
+    font-size:32px;
+}
+
+.b,.refresh
+
+{
+    background-color: rgb(16, 238, 90);
+    color:rgb(26, 4, 87);
+    font-size:28px;
+    height: 32px;
+}
+.t
+{
+    height: 28px;
+    font-size: 28px;
+    width:70px;
+    color: rgb(19, 4, 99);
+    background-color: rgb(244, 245, 243);
+}
+

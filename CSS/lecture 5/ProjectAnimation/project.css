@@ -1,0 +1,18 @@
+body{
+    background: #416fb4 url(../Backgrounds/planets.png) repeat-x 100px 15%;
+}
+
+.r1{
+    height: 150px;
+    position: absolute;
+    top:250px;
+    left: 300px;
+    transform: rotateZ(45deg);
+}
+
+.codey{
+    height:150px;
+    position: absolute;
+    top:250px;
+    left:-10%;
+}

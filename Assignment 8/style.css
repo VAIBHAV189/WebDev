@@ -1,0 +1,28 @@
+body{
+    background: url(img.jpg);
+    font-family:cursive;
+    background-size:cover;
+}
+
+.wrap
+{
+    position: absolute;
+    left:29%;
+    top:10%;
+}
+
+.buttons
+{
+    position: relative; 
+    left:61.5%;
+}
+#list
+{
+    color:navy;
+    font-family: cursive;
+    font-size:20px;
+}
+.input-group
+{
+    width: 650px;
+}

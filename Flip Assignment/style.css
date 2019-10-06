@@ -1,0 +1,55 @@
+body{
+    background-color: black;
+    height:600px;
+    position: static;
+    border: 2px solid white;
+    perspective: 600px;
+    
+}
+.wrap{
+    position: relative;
+    top:10%;
+    height:500px;
+    width:400px;
+    margin: auto;
+    transform-style:preserve-3d;
+
+    transform: transition;
+    transition-duration: 3s;
+    
+}
+
+.wrap div{
+    height:500px;
+    width:400px;
+    margin:auto;
+    position: absolute;
+    backface-visibility: hidden;
+
+}
+.frontside{
+    background: rgb(42, 112, 241) url(taj-mahal.jpg) no-repeat center;
+    background-size:cover;
+    align-content: center;
+    z-index: 200;
+}
+
+.backside{
+ background: white center;
+ background-size: cover;
+ font-weight: 700;
+ overflow: scroll;
+ color: rgb(35, 91, 245);
+ transform: rotateY(180deg);
+}
+
+.backside pre{
+    margin:100px 0px;
+    text-align: left;
+    font-size: larger;
+}
+
+.wrap:hover{
+    transform:rotateY(180deg);
+    
+}

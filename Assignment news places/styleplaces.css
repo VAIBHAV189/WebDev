@@ -1,0 +1,88 @@
+body{
+    background: url(placesback.jpg) no-repeat;
+    background-size: cover;
+    perspective: 800px;
+}
+img{
+    width:250px;
+    height:200px;
+    padding: 30px 20px;
+}
+h1{
+    font-weight: 800;
+    font-size: 50px;
+    color: rgba(13, 13, 134, 0.993);
+}
+a{
+    color:darkblue;
+}
+div{
+    float:left;
+}
+.wrap
+{               
+    height:284px;   
+    width:304px;
+    margin:150px;
+    /* margin:20px; */
+    /* background: skyblue; */
+    /* left:50%; */
+    /* margin-left:150px; */
+    transform: transition;
+    transition-duration: 2s;
+    transform-style:preserve-3d;    
+   
+    
+}
+.wrap div
+{
+    background-color:lightyellow;
+    left:40%;
+    /* margin-left:40%; */
+    height:280px;
+    width:300px;
+    position:absolute;
+
+    /* left:50%; */
+    backface-visibility: hidden;
+    
+}
+.F{
+    align-content: center;
+    font-family: cursive;
+    z-index:100;
+    color:rgb(13, 13, 14);
+    border: 2px solid rgb(37, 36, 36);
+}
+.F::after{
+    content: " ";
+    display: table;
+    clear: left;
+}
+.B
+{
+    padding:10px;
+    font-family: cursive;
+    font-weight: 600;
+    font-size:20px;
+    overflow:scroll;
+    color:rgb(70, 5, 90);
+    border: 2px solid rgb(37, 36, 36);
+    transform:rotateY(180deg);
+
+}
+.B::after{
+    content: " ";
+    display: table;
+    clear: left;
+}  
+
+
+
+.wrap:hover 
+{
+    transform:rotateY(180deg);
+}
+.F{
+    padding-left: 0;
+}

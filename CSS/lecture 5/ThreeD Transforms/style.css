@@ -1,0 +1,41 @@
+body{
+    perspective: 800px;
+  
+}
+.wrap
+{
+    height:400px;   
+    width:300px;
+    margin:auto;
+    /* background: skyblue; */
+    
+    transform: transition;
+    transform-origin: center;
+    transition-duration: 2s;
+    transform-style:preserve-3d;
+    
+}
+
+.wrap div{
+    height:400px;
+    width:300px;
+    position:absolute;
+    backface-visibility: hidden;
+    
+}
+.frontside{
+    background: black url(../Backgrounds/Vegeta.jpeg) no-repeat center;
+    z-index: 100; /*Jiska z-index jyada hoga wo cheez upar aa jayegi */
+    
+}
+/*Peeche wale ko flip karke rakha hai already*/
+.backside{
+    background: black url(../Backgrounds/astronaut.png) no-repeat;
+    background-size:cover;
+    transform:rotateY(180deg);
+}
+
+.wrap:hover{
+    transform:rotateY(180deg);
+
+}
