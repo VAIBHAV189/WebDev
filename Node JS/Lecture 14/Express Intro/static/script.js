@@ -1,0 +1,1 @@
+console.log("yeahh!! this is a static script file");
