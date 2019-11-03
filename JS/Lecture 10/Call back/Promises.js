@@ -113,6 +113,6 @@ downloadFile('http://example.com/file.mp4')
 
 // setTimeout(function(){
 //     p.then(function(){
-//         console.log("FInally Done");
+//         console.log("Finally Done");
 //     });
 // },1000)
