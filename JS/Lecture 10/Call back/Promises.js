@@ -106,7 +106,7 @@ downloadFile('http://example.com/file.mp4')
 //     {
 //         console.log("Download starts");
 //         setTimeout(function(){
-//             resolve();
+//             resolve(result);
         
 //     },3000)
 // });
