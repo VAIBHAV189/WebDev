@@ -6,12 +6,12 @@ CAP
 		- Scaling
 			1. Horizontal scaling
 			2. Vertical Scaling
-	 One databse is present in EUROPE and one is present in India
-	 If change is made in Indian database and by chance connection gets lost then European 		 database doesnt get updated
+	 One database is present in EUROPE and one is present in India
+	 If change is made in Indian database and by chance connection gets lost then European database doesnt get updated
 	 Basically handling synchronisation is known as partition tolerance
 
  
-	=> Agar 2 valid hai to teesra valid nhi ho sakta acc to cap theorem (consistent , 		   available hai to partition tolerance nhi hoga)
+	=> Agar 2 valid hai to teesra valid nhi ho sakta acc to cap theorem (consistent , available hai to partition tolerance nhi hoga)
 	
 
 PACELC(Extended version of Cap)
@@ -24,7 +24,7 @@ PACELC(Extended version of Cap)
 
 	Partition hai to cap theorem ki tarah work karega else
 	latency ya consistency suffer karenge
-	Latency matlb data update karne k liye kuch time lagega(Query queue ho jati hai jb disk 	free hoti hai tb kaam hota hai actual mei so time lag hota hai)
+	Latency matlb data update karne k liye kuch time lagega(Query queue ho jati hai jb disk free hoti hai tb kaam hota hai actual mei so time lag hota hai)
 
 Families of DataBases		
 
@@ -44,7 +44,7 @@ Isliye copy bnti hai original ki aur agar updated wali sahi se update na ho paye
 
 Base aur Acid opp hai ek dusre ke 
 
-Agar consistent hai to basically avaialable nhi hogi
+Agar consistent hai to basically available nhi hogi
 
 Eventually consistent ka matlb ye hai ki har nayi query k liye wo bolega update ho gaya hai but actual me tab update hoga jb queue empty ho
 
