@@ -1,0 +1,1363 @@
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~
+$ cd OneDrive/Desktop/WebDev/Git\ Hub/lecture\ 17/first_repo/
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   file3
+
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (master)
+$ git commit -m "Adding file3"
+[master 342c1a0] Adding file3
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 file3
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (master)
+$ git log
+commit 342c1a016f3e8b92db40c9c59dd0aef256b88695 (HEAD -> master)
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 17:07:34 2019 +0530
+
+    Adding file3
+
+commit a416ef5e4a7779e94104bf7050b7637631fcad6b
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 17:04:53 2019 +0530
+
+    adding File 2
+
+commit 6eaa4ddc63c04de479b701748e6d4c9de8b30a5d
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 17:00:07 2019 +0530
+
+    Adding code
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (master)
+$ less file3
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (master)
+$ less file2
+
+
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (master)
+$ git checkout  6eaa4
+Note: switching to '6eaa4'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 6eaa4dd Adding code
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo ((6eaa4dd...))
+$ less file2
+file2: No such file or directory
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo ((6eaa4dd...))
+$ ls
+file1
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo ((6eaa4dd...))
+$ git checkout master
+Previous HEAD position was 6eaa4dd Adding code
+Switched to branch 'master'
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (master)
+$ git checkout  6eaa4
+Note: switching to '6eaa4'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 6eaa4dd Adding code
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo ((6eaa4dd...))
+$ git log
+commit 6eaa4ddc63c04de479b701748e6d4c9de8b30a5d (HEAD)
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 17:00:07 2019 +0530
+
+    Adding code
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo ((6eaa4dd...))
+$ git checkout master
+Previous HEAD position was 6eaa4dd Adding code
+Switched to branch 'master'
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (master)
+$ git log
+commit 342c1a016f3e8b92db40c9c59dd0aef256b88695 (HEAD -> master)
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 17:07:34 2019 +0530
+
+    Adding file3
+
+commit a416ef5e4a7779e94104bf7050b7637631fcad6b
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 17:04:53 2019 +0530
+
+    adding File 2
+
+commit 6eaa4ddc63c04de479b701748e6d4c9de8b30a5d
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 17:00:07 2019 +0530
+
+    Adding code
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (master)
+$ git diff a416e 6eaa4
+diff --git a/file2 b/file2
+deleted file mode 100644
+index b4fcd55..0000000
+--- a/file2
++++ /dev/null
+@@ -1,2 +0,0 @@
+-This is file2
+-
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (master)
+$ git branch new_feature
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (master)
+$ git branch
+* master
+  new_feature
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (master)
+$ git checkout new_feature
+Switched to branch 'new_feature'
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (new_feature)
+$ git branch
+  master
+* new_feature
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (new_feature)
+$ git log
+commit 342c1a016f3e8b92db40c9c59dd0aef256b88695 (HEAD -> new_feature, master)
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 17:07:34 2019 +0530
+
+    Adding file3
+
+commit a416ef5e4a7779e94104bf7050b7637631fcad6b
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 17:04:53 2019 +0530
+
+    adding File 2
+
+commit 6eaa4ddc63c04de479b701748e6d4c9de8b30a5d
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 17:00:07 2019 +0530
+
+    Adding code
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (new_feature)
+$ vim file4
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (new_feature)
+$ git add file4
+warning: LF will be replaced by CRLF in file4.
+The file will have its original line endings in your working directory
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (new_feature)
+$ git commit -m "Adding new_feature file4"
+[new_feature 5202f83] Adding new_feature file4
+ 1 file changed, 3 insertions(+)
+ create mode 100644 file4
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (new_feature)
+$ git branch
+  master
+* new_feature
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (new_feature)
+$ git checkout master
+Switched to branch 'master'
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (master)
+$ git branch
+* master
+  new_feature
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (master)
+$ git log
+commit 342c1a016f3e8b92db40c9c59dd0aef256b88695 (HEAD -> master)
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 17:07:34 2019 +0530
+
+    Adding file3
+
+commit a416ef5e4a7779e94104bf7050b7637631fcad6b
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 17:04:53 2019 +0530
+
+    adding File 2
+
+commit 6eaa4ddc63c04de479b701748e6d4c9de8b30a5d
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 17:00:07 2019 +0530
+
+    Adding code
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (master)
+$ git checkout new_feature
+Switched to branch 'new_feature'
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (new_feature)
+$ git status
+On branch new_feature
+nothing to commit, working tree clean
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (new_feature)
+$ git log
+commit 5202f83cfb7f2d04cbd844ee40cbe60b9031a36f (HEAD -> new_feature)
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 17:28:43 2019 +0530
+
+    Adding new_feature file4
+
+commit 342c1a016f3e8b92db40c9c59dd0aef256b88695 (master)
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 17:07:34 2019 +0530
+
+    Adding file3
+
+commit a416ef5e4a7779e94104bf7050b7637631fcad6b
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 17:04:53 2019 +0530
+
+    adding File 2
+
+commit 6eaa4ddc63c04de479b701748e6d4c9de8b30a5d
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 17:00:07 2019 +0530
+
+    Adding code
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (new_feature)
+$ git checkout master
+Switched to branch 'master'
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (master)
+$ git checkout -b newer_feature
+Switched to a new branch 'newer_feature'
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (newer_feature)
+$ git branch
+  master
+  new_feature
+* newer_feature
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (newer_feature)
+$ git branch -D newer_feature
+error: Cannot delete branch 'newer_feature' checked out at 'C:/Users/vaibhav/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo'
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (newer_feature)
+$ git checkout master
+Switched to branch 'master'
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (master)
+$ git branch
+* master
+  new_feature
+  newer_feature
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (master)
+$ git branch -D newer_feature
+Deleted branch newer_feature (was 342c1a0).
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (master)
+$ git branch
+* master
+  new_feature
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (master)
+$ git log
+commit 342c1a016f3e8b92db40c9c59dd0aef256b88695 (HEAD -> master)
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 17:07:34 2019 +0530
+
+    Adding file3
+
+commit a416ef5e4a7779e94104bf7050b7637631fcad6b
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 17:04:53 2019 +0530
+
+    adding File 2
+
+commit 6eaa4ddc63c04de479b701748e6d4c9de8b30a5d
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 17:00:07 2019 +0530
+
+    Adding code
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (master)
+$ git checkout new_feature
+Switched to branch 'new_feature'
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (new_feature)
+$ git log
+commit 5202f83cfb7f2d04cbd844ee40cbe60b9031a36f (HEAD -> new_feature)
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 17:28:43 2019 +0530
+
+    Adding new_feature file4
+
+commit 342c1a016f3e8b92db40c9c59dd0aef256b88695 (master)
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 17:07:34 2019 +0530
+
+    Adding file3
+
+commit a416ef5e4a7779e94104bf7050b7637631fcad6b
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 17:04:53 2019 +0530
+
+    adding File 2
+
+commit 6eaa4ddc63c04de479b701748e6d4c9de8b30a5d
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 17:00:07 2019 +0530
+
+    Adding code
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (new_feature)
+$ git merge master new_feature
+Already up to date.
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (new_feature)
+$ git branch
+  master
+* new_feature
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (new_feature)
+$ git checkout master
+Switched to branch 'master'
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (master)
+$ git merge new_feature
+Updating 342c1a0..5202f83
+Fast-forward
+ file4 | 3 +++
+ 1 file changed, 3 insertions(+)
+ create mode 100644 file4
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (master)
+$ git log
+commit 5202f83cfb7f2d04cbd844ee40cbe60b9031a36f (HEAD -> master, new_feature)
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 17:28:43 2019 +0530
+
+    Adding new_feature file4
+
+commit 342c1a016f3e8b92db40c9c59dd0aef256b88695
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 17:07:34 2019 +0530
+
+    Adding file3
+
+commit a416ef5e4a7779e94104bf7050b7637631fcad6b
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 17:04:53 2019 +0530
+
+    adding File 2
+
+commit 6eaa4ddc63c04de479b701748e6d4c9de8b30a5d
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 17:00:07 2019 +0530
+
+    Adding code
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (master)
+$ less file4
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (master)
+$ vim file4
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   file4
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (master)
+$ git add file4
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (master)
+$ git commit -m "Updating file4"
+[master cd20a55] Updating file4
+ 1 file changed, 2 insertions(+)
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (master)
+$ git checkout new_feature
+Switched to branch 'new_feature'
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (new_feature)
+$ vim file4
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (new_feature)
+$ git log
+commit 5202f83cfb7f2d04cbd844ee40cbe60b9031a36f (HEAD -> new_feature)
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 17:28:43 2019 +0530
+
+    Adding new_feature file4
+
+commit 342c1a016f3e8b92db40c9c59dd0aef256b88695
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 17:07:34 2019 +0530
+
+    Adding file3
+
+commit a416ef5e4a7779e94104bf7050b7637631fcad6b
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 17:04:53 2019 +0530
+
+    adding File 2
+
+commit 6eaa4ddc63c04de479b701748e6d4c9de8b30a5d
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 17:00:07 2019 +0530
+
+    Adding code
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (new_feature)
+$ git add file4
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (new_feature)
+$ git commit -m "Updated through new_feature branch"
+[new_feature e7bf1fe] Updated through new_feature branch
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (new_feature)
+$ git branch
+  master
+* new_feature
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (new_feature)
+$ git checkout master
+Switched to branch 'master'
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (master)
+$ git merge master new_feature
+Auto-merging file4
+CONFLICT (content): Merge conflict in file4
+Automatic merge failed; fix conflicts and then commit the result.
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (master|MERGING)
+$ vim file4
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (master|MERGING)
+$ git add file4
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (master|MERGING)
+$ less file4
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (master|MERGING)
+$ git status
+On branch master
+All conflicts fixed but you are still merging.
+  (use "git commit" to conclude merge)
+
+Changes to be committed:
+        modified:   file4
+
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (master|MERGING)
+$ git  log
+commit cd20a5591f4b88ca3210dbc0f3a1e81409e3db9e (HEAD -> master)
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 17:43:41 2019 +0530
+
+    Updating file4
+
+commit 5202f83cfb7f2d04cbd844ee40cbe60b9031a36f
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 17:28:43 2019 +0530
+
+    Adding new_feature file4
+
+commit 342c1a016f3e8b92db40c9c59dd0aef256b88695
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 17:07:34 2019 +0530
+
+    Adding file3
+
+commit a416ef5e4a7779e94104bf7050b7637631fcad6b
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 17:04:53 2019 +0530
+
+    adding File 2
+
+commit 6eaa4ddc63c04de479b701748e6d4c9de8b30a5d
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 17:00:07 2019 +0530
+
+    Adding code
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (master|MERGING)
+$ cat file2 file4
+This is file2
+
+this is file 4
+
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (master|MERGING)
+$ cd ..
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17 (master)
+$ ls
+first_repo/
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17 (master)
+$ git clone first_repo/
+fatal: Too many arguments.
+
+usage: git clone [<options>] [--] <repo> [<dir>]
+
+    -v, --verbose         be more verbose
+    -q, --quiet           be more quiet
+    --progress            force progress reporting
+    -n, --no-checkout     don't create a checkout
+    --bare                create a bare repository
+    --mirror              create a mirror repository (implies bare)
+    -l, --local           to clone from a local repository
+    --no-hardlinks        don't use local hardlinks, always copy
+    -s, --shared          setup as shared repository
+    --recursive ...       alias of --recurse-submodules
+    --recurse-submodules[=<pathspec>]
+                          initialize submodules in the clone
+    -j, --jobs <n>        number of submodules cloned in parallel
+    --template <template-directory>
+                          directory from which templates will be used
+    --reference <repo>    reference repository
+    --reference-if-able <repo>
+                          reference repository
+    --dissociate          use --reference only while cloning
+    -o, --origin <name>   use <name> instead of 'origin' to track upstream
+    -b, --branch <branch>
+                          checkout <branch> instead of the remote's HEAD
+    -u, --upload-pack <path>
+                          path to git-upload-pack on the remote
+    --depth <depth>       create a shallow clone of that depth
+    --shallow-since <time>
+                          create a shallow clone since a specific time
+    --shallow-exclude <revision>
+                          deepen history of shallow clone, excluding rev
+    --single-branch       clone only one branch, HEAD or --branch
+    --no-tags             don't clone any tags, and make later fetches not to follow them
+    --shallow-submodules  any cloned submodules will be shallow
+    --separate-git-dir <gitdir>
+                          separate git dir from working tree
+    -c, --config <key=value>
+                          set config inside the new repository
+    --server-option <server-specific>
+                          option to transmit
+    -4, --ipv4            use IPv4 addresses only
+    -6, --ipv6            use IPv6 addresses only
+    --filter <args>       object filtering
+    --remote-submodules   any cloned submodules will use their remote-tracking branch
+
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17 (master)
+$ git clone first_repo clone_project
+Cloning into 'clone_project'...
+done.
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17 (master)
+$ ls
+clone_project/  first_repo/
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17 (master)
+$ cd clone_project/
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/clone_project (master)
+$ ls
+file1  file2  file3  file4
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/clone_project (master)
+$ git log
+commit cd20a5591f4b88ca3210dbc0f3a1e81409e3db9e (HEAD -> master, origin/master, origin/HEAD)
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 17:43:41 2019 +0530
+
+    Updating file4
+
+commit 5202f83cfb7f2d04cbd844ee40cbe60b9031a36f
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 17:28:43 2019 +0530
+
+    Adding new_feature file4
+
+commit 342c1a016f3e8b92db40c9c59dd0aef256b88695
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 17:07:34 2019 +0530
+
+    Adding file3
+
+commit a416ef5e4a7779e94104bf7050b7637631fcad6b
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 17:04:53 2019 +0530
+
+    adding File 2
+
+commit 6eaa4ddc63c04de479b701748e6d4c9de8b30a5d
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 17:00:07 2019 +0530
+
+    Adding code
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/clone_project (master)
+$ ls -a
+./  ../  .git/  file1  file2  file3  file4
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/clone_project (master)
+$ ls -l
+total 3
+-rw-r--r-- 1 vaibhav 197121 10 Oct 20 17:59 file1
+-rw-r--r-- 1 vaibhav 197121 17 Oct 20 17:59 file2
+-rw-r--r-- 1 vaibhav 197121  0 Oct 20 17:59 file3
+-rw-r--r-- 1 vaibhav 197121 74 Oct 20 17:59 file4
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/clone_project (master)
+$ git remote
+origin
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/clone_project (master)
+$ cd ..
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17 (master)
+$ cd first_repo/
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (master|MERGING)
+$ git remote
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (master|MERGING)
+$ git remote add clonerr clone_project
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (master|MERGING)
+$ git remote
+clonerr
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (master|MERGING)
+$ ls
+file1  file2  file3  file4
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (master|MERGING)
+$ cd ../clone_project/
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/clone_project (master)
+$ vim file5
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/clone_project (master)
+$ ls -a
+./  ../  .git/  file1  file2  file3  file4  file5
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/clone_project (master)
+$ git add file5
+warning: LF will be replaced by CRLF in file5.
+The file will have its original line endings in your working directory
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/clone_project (master)
+$ git commit -m "Added a excellent feature in file 5"
+[master ae446b4] Added a excellent feature in file 5
+ 1 file changed, 1 insertion(+)
+ create mode 100644 file5
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/clone_project (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/clone_project (master)
+$ git log
+commit ae446b46fc54d672b3b4653d123adc9dd6f3b423 (HEAD -> master)
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 18:07:38 2019 +0530
+
+    Added a excellent feature in file 5
+
+commit cd20a5591f4b88ca3210dbc0f3a1e81409e3db9e (origin/master, origin/HEAD)
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 17:43:41 2019 +0530
+
+    Updating file4
+
+commit 5202f83cfb7f2d04cbd844ee40cbe60b9031a36f
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 17:28:43 2019 +0530
+
+    Adding new_feature file4
+
+commit 342c1a016f3e8b92db40c9c59dd0aef256b88695
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 17:07:34 2019 +0530
+
+    Adding file3
+
+commit a416ef5e4a7779e94104bf7050b7637631fcad6b
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 17:04:53 2019 +0530
+
+    adding File 2
+
+commit 6eaa4ddc63c04de479b701748e6d4c9de8b30a5d
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 17:00:07 2019 +0530
+
+    Adding code
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/clone_project (master)
+$ cd ../first_repo/
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (master|MERGING)
+$ git log
+commit cd20a5591f4b88ca3210dbc0f3a1e81409e3db9e (HEAD -> master)
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 17:43:41 2019 +0530
+
+    Updating file4
+
+commit 5202f83cfb7f2d04cbd844ee40cbe60b9031a36f
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 17:28:43 2019 +0530
+
+    Adding new_feature file4
+
+commit 342c1a016f3e8b92db40c9c59dd0aef256b88695
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 17:07:34 2019 +0530
+
+    Adding file3
+
+commit a416ef5e4a7779e94104bf7050b7637631fcad6b
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 17:04:53 2019 +0530
+
+    adding File 2
+
+commit 6eaa4ddc63c04de479b701748e6d4c9de8b30a5d
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 17:00:07 2019 +0530
+
+    Adding code
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (master|MERGING)
+$ cd ../clone_project/
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/clone_project (master)
+$ git push origin
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 307 bytes | 307.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: error: refusing to update checked out branch: refs/heads/master
+remote: error: By default, updating the current branch in a non-bare repository
+remote: is denied, because it will make the index and work tree inconsistent
+remote: with what you pushed, and will require 'git reset --hard' to match
+remote: the work tree to HEAD.
+remote:
+remote: You can set the 'receive.denyCurrentBranch' configuration variable
+remote: to 'ignore' or 'warn' in the remote repository to allow pushing into
+remote: its current branch; however, this is not recommended unless you
+remote: arranged to update its work tree to match what you pushed in some
+remote: other way.
+remote:
+remote: To squelch this message and still keep the default behaviour, set
+remote: 'receive.denyCurrentBranch' configuration variable to 'refuse'.
+To C:/Users/vaibhav/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo
+ ! [remote rejected] master -> master (branch is currently checked out)
+error: failed to push some refs to 'C:/Users/vaibhav/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo'
++
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/clone_project (master)
+$ cd ..
+
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~
+$ cd OneDrive/Desktop/WebDev/Git\ Hub
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub (master)
+$ cd lecture\ 17/
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17 (master)
+$ rm -rf clone_project/
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17 (master)
+$ git clone first_repo clone_project
+Cloning into 'clone_project'...
+done.
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17 (master)
+$ cd first_repo/
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (master|MERGING)
+$ git remote add clone_p clone_project
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (master|MERGING)
+$ cd ..
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17 (master)
+$ cd clone_project/
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/clone_project (master)
+$ git checkout -b new_branch
+Switched to a new branch 'new_branch'
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/clone_project (new_branch)
+$ git branch
+  master
+* new_branch
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/clone_project (new_branch)
+$ vim file5
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/clone_project (new_branch)
+$ git add file5
+warning: LF will be replaced by CRLF in file5.
+The file will have its original line endings in your working directory
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/clone_project (new_branch)
+$ git commit -m "Adding file5"
+[new_branch c91641a] Adding file5
+ 1 file changed, 1 insertion(+)
+ create mode 100644 file5
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/clone_project (new_branch)
+$ git branch
+  master
+* new_branch
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/clone_project (new_branch)
+$ git push origin new_branch
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 297 bytes | 297.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+To C:/Users/vaibhav/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo
+ * [new branch]      new_branch -> new_branch
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/clone_project (new_branch)
+$ cd ..
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17 (master)
+$ cd first_repo/
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (master|MERGING)
+$ git branch
+* master
+  new_branch
+  new_feature
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (master|MERGING)
+$ git log
+commit cd20a5591f4b88ca3210dbc0f3a1e81409e3db9e (HEAD -> master)
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 17:43:41 2019 +0530
+
+    Updating file4
+
+commit 5202f83cfb7f2d04cbd844ee40cbe60b9031a36f
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 17:28:43 2019 +0530
+
+    Adding new_feature file4
+
+commit 342c1a016f3e8b92db40c9c59dd0aef256b88695
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 17:07:34 2019 +0530
+
+    Adding file3
+
+commit a416ef5e4a7779e94104bf7050b7637631fcad6b
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 17:04:53 2019 +0530
+
+    adding File 2
+
+commit 6eaa4ddc63c04de479b701748e6d4c9de8b30a5d
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 17:00:07 2019 +0530
+
+    Adding code
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (master|MERGING)
+$ git checkout
+HEAD          master        MERGE_HEAD    new_branch    new_feature   ORIG_HEAD
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (master|MERGING)
+$ git branch
+* master
+  new_branch
+  new_feature
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (master|MERGING)
+$ git checkout new_
+new_branch    new_feature
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (master|MERGING)
+$ git checkout new_
+new_branch    new_feature
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (master|MERGING)
+$ git checkout new_branch
+Switched to branch 'new_branch'
+M       file4
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (new_branch)
+$ git log
+commit c91641a59accd27011e9e19a9e15fa0f77c253be (HEAD -> new_branch)
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 18:26:51 2019 +0530
+
+    Adding file5
+
+commit cd20a5591f4b88ca3210dbc0f3a1e81409e3db9e (master)
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 17:43:41 2019 +0530
+
+    Updating file4
+
+commit 5202f83cfb7f2d04cbd844ee40cbe60b9031a36f
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 17:28:43 2019 +0530
+
+    Adding new_feature file4
+
+commit 342c1a016f3e8b92db40c9c59dd0aef256b88695
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 17:07:34 2019 +0530
+
+    Adding file3
+
+commit a416ef5e4a7779e94104bf7050b7637631fcad6b
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 17:04:53 2019 +0530
+
+    adding File 2
+
+commit 6eaa4ddc63c04de479b701748e6d4c9de8b30a5d
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 17:00:07 2019 +0530
+
+    Adding code
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (new_branch)
+$ vim file5
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (new_branch)
+$ git status
+On branch new_branch
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   file4
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   file5
+
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (new_branch)
+$ git add file5
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (new_branch)
+$ git commit -m "Please add appropriate terms"
+[new_branch 9b74de8] Please add appropriate terms
+ 2 files changed, 1 insertion(+), 4 deletions(-)
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (new_branch)
+$ cd ../clone_project/
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/clone_project (new_branch)
+$ vim file5
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/clone_project (new_branch)
+$ git add file5
+warning: LF will be replaced by CRLF in file5.
+The file will have its original line endings in your working directory
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/clone_project (new_branch)
+$ git commit -m "Adding another excellent feature"
+[new_branch 9047fbc] Adding another excellent feature
+ 1 file changed, 2 insertions(+)
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/clone_project (new_branch)
+$ git brach
+git: 'brach' is not a git command. See 'git --help'.
+
+The most similar command is
+        branch
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/clone_project (new_branch)
+$ git branch
+  master
+* new_branch
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/clone_project (new_branch)
+$ git push origin new_branch
+To C:/Users/vaibhav/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo
+ ! [rejected]        new_branch -> new_branch (fetch first)
+error: failed to push some refs to 'C:/Users/vaibhav/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/clone_project (new_branch)
+$ git pull origin new_branch
+remote: Enumerating objects: 7, done.
+remote: Counting objects: 100% (7/7), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 4 (delta 1), reused 0 (delta 0)
+Unpacking objects: 100% (4/4), done.
+From C:/Users/vaibhav/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo
+ * branch            new_branch -> FETCH_HEAD
+   c91641a..9b74de8  new_branch -> origin/new_branch
+Auto-merging file5
+CONFLICT (content): Merge conflict in file5
+Automatic merge failed; fix conflicts and then commit the result.
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/clone_project (new_branch|MERGING)
+$ git log
+commit 9047fbc10ed7ebf98d9871371bee006d087feb71 (HEAD -> new_branch)
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 18:35:14 2019 +0530
+
+    Adding another excellent feature
+
+commit c91641a59accd27011e9e19a9e15fa0f77c253be
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 18:26:51 2019 +0530
+
+    Adding file5
+
+commit cd20a5591f4b88ca3210dbc0f3a1e81409e3db9e (origin/master, origin/HEAD, master)
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 17:43:41 2019 +0530
+
+    Updating file4
+
+commit 5202f83cfb7f2d04cbd844ee40cbe60b9031a36f
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 17:28:43 2019 +0530
+
+    Adding new_feature file4
+
+commit 342c1a016f3e8b92db40c9c59dd0aef256b88695
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 17:07:34 2019 +0530
+
+    Adding file3
+
+commit a416ef5e4a7779e94104bf7050b7637631fcad6b
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 17:04:53 2019 +0530
+
+    adding File 2
+
+commit 6eaa4ddc63c04de479b701748e6d4c9de8b30a5d
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/clone_project (new_branch|MERGING)
+$ vim file5
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/clone_project (new_branch|MERGING)
+$ git add file5
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/clone_project (new_branch|MERGING)
+$ git commit -m "Conflict resolved"
+[new_branch 823c12f] Conflict resolved
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/clone_project (new_branch)
+$ cd ../first_repo/
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (new_branch)
+$ git branch
+  master
+* new_branch
+  new_feature
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (new_branch)
+$ git checkout master
+Switched to branch 'master'
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (master)
+$ git branch
+* master
+  new_branch
+  new_feature
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (master)
+$ cd ../clone_project/
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/clone_project (new_branch)
+$ git branch
+  master
+* new_branch
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/clone_project (new_branch)
+$ git push origin new_branch
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 652 bytes | 652.00 KiB/s, done.
+Total 6 (delta 2), reused 0 (delta 0)
+To C:/Users/vaibhav/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo
+   9b74de8..823c12f  new_branch -> new_branch
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/clone_project (new_branch)
+$ git log
+commit 823c12ff7a97fc781d8fa82ec6137c2f4de750e0 (HEAD -> new_branch, origin/new_branch)
+Merge: 9047fbc 9b74de8
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 18:40:37 2019 +0530
+
+    Conflict resolved
+
+commit 9047fbc10ed7ebf98d9871371bee006d087feb71
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 18:35:14 2019 +0530
+
+    Adding another excellent feature
+
+commit 9b74de87d9a724522191e619c69f545053aed4da
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 18:32:29 2019 +0530
+
+    Please add appropriate terms
+
+commit c91641a59accd27011e9e19a9e15fa0f77c253be
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 18:26:51 2019 +0530
+
+    Adding file5
+
+commit cd20a5591f4b88ca3210dbc0f3a1e81409e3db9e (origin/master, origin/HEAD, master)
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 17:43:41 2019 +0530
+
+    Updating file4
+
+commit 5202f83cfb7f2d04cbd844ee40cbe60b9031a36f
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 17:28:43 2019 +0530
+
+    Adding new_feature file4
+
+commit 342c1a016f3e8b92db40c9c59dd0aef256b88695
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/clone_project (new_branch)
+$ cd ../first_repo/
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (master)
+$ git log
+commit cd20a5591f4b88ca3210dbc0f3a1e81409e3db9e (HEAD -> master)
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 17:43:41 2019 +0530
+
+    Updating file4
+
+commit 5202f83cfb7f2d04cbd844ee40cbe60b9031a36f
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 17:28:43 2019 +0530
+
+    Adding new_feature file4
+
+commit 342c1a016f3e8b92db40c9c59dd0aef256b88695
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 17:07:34 2019 +0530
+
+    Adding file3
+
+commit a416ef5e4a7779e94104bf7050b7637631fcad6b
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 17:04:53 2019 +0530
+
+    adding File 2
+
+commit 6eaa4ddc63c04de479b701748e6d4c9de8b30a5d
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 17:00:07 2019 +0530
+
+    Adding code
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (master)
+$ git checkout new_
+new_branch    new_feature
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (master)
+$ git checkout new_
+new_branch    new_feature
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (master)
+$ git checkout new_branch
+Switched to branch 'new_branch'
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (new_branch)
+$ git log
+commit 823c12ff7a97fc781d8fa82ec6137c2f4de750e0 (HEAD -> new_branch)
+Merge: 9047fbc 9b74de8
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 18:40:37 2019 +0530
+
+    Conflict resolved
+
+commit 9047fbc10ed7ebf98d9871371bee006d087feb71
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 18:35:14 2019 +0530
+
+    Adding another excellent feature
+
+commit 9b74de87d9a724522191e619c69f545053aed4da
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 18:32:29 2019 +0530
+
+    Please add appropriate terms
+
+commit c91641a59accd27011e9e19a9e15fa0f77c253be
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 18:26:51 2019 +0530
+
+    Adding file5
+
+commit cd20a5591f4b88ca3210dbc0f3a1e81409e3db9e (master)
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 17:43:41 2019 +0530
+
+    Updating file4
+
+commit 5202f83cfb7f2d04cbd844ee40cbe60b9031a36f
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 17:28:43 2019 +0530
+
+    Adding new_feature file4
+
+commit 342c1a016f3e8b92db40c9c59dd0aef256b88695
+
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (new_branch)
+$ pwd
+/c/Users/vaibhav/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (new_branch)
+$ git remote add origin https://github.com/VAIBHAV189/Testing-GitHub-.git
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (new_branch)
+$ git push -u origin master
+Enumerating objects: 15, done.
+Counting objects: 100% (15/15), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (10/10), done.
+Writing objects: 100% (15/15), 1.23 KiB | 418.00 KiB/s, done.
+Total 15 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), done.
+To https://github.com/VAIBHAV189/Testing-GitHub-.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (new_branch)
+$ git branch
+  master
+* new_branch
+  new_feature
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (new_branch)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (master)
+$ git log
+commit cd20a5591f4b88ca3210dbc0f3a1e81409e3db9e (HEAD -> master, origin/master)
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 17:43:41 2019 +0530
+
+    Updating file4
+
+commit 5202f83cfb7f2d04cbd844ee40cbe60b9031a36f
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 17:28:43 2019 +0530
+
+    Adding new_feature file4
+
+commit 342c1a016f3e8b92db40c9c59dd0aef256b88695
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 17:07:34 2019 +0530
+
+    Adding file3
+
+commit a416ef5e4a7779e94104bf7050b7637631fcad6b
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 17:04:53 2019 +0530
+
+    adding File 2
+
+commit 6eaa4ddc63c04de479b701748e6d4c9de8b30a5d
+Author: VAIBHAV189 <varshney.vaibhav18@gmail.com>
+Date:   Sun Oct 20 17:00:07 2019 +0530
+
+    Adding code
+
+vaibhav@LAPTOP-51RPN0FB MINGW64 ~/OneDrive/Desktop/WebDev/Git Hub/lecture 17/first_repo (master)
+$ git push origin new_branch
+Enumerating objects: 15, done.
+Counting objects: 100% (15/15), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (10/10), done.
+Writing objects: 100% (13/13), 1.12 KiB | 572.00 KiB/s, done.
+Total 13 (delta 5), reused 0 (delta 0)
+remote: Resolving deltas: 100% (5/5), completed with 1 local object.
+remote:
+remote: Create a pull request for 'new_branch' on GitHub by visiting:
+remote:      https://github.com/VAIBHAV189/Testing-GitHub-/pull/new/new_branch
+remote:
+To https://github.com/VAIBHAV189/Testing-GitHub-.git
+ * [new branch]      new_branch -> new_branch
+
