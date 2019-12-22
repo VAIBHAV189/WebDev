@@ -28,7 +28,7 @@ server.get('/file',(req,res)=>{
 })
 
 server.get('/server.js',(req,res)=>{
-    res.send(`console.log("Hello World")`);
+    res.send(console.log('Hello World!'))
 })
 //We cant use port from 0 to 1024 as they are already in use.
 server.use('/staticfile',express.static(__dirname+'/static'));

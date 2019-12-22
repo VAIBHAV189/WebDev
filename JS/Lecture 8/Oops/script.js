@@ -22,41 +22,42 @@
 
 // console.log(c.k); //2
 
-let a={
-    k:1,
-    l:'Hello',
-    m:true,
-    n:[1,2,3]
-}
+//-----------------------------------------//
+// let a={
+//     k:1,
+//     l:'Hello',
+//     m:true,
+//     n:[1,2,3]
+// }
 
-let b=Object.create(a);
-let c=Object.create(b);
+// let b=Object.create(a);
+// let c=Object.create(b);
 // b.n[2]=30; //Updation no additions in b
-b.n=a.n.join(','); //JOin se string bnta hai aur split se wapas array
-console.log(a);
-console.log(b);
+// b.n=a.n.join(','); //Join se string bnta hai aur split se wapas array
+// console.log(a);
+// console.log(b);
 
-console.log(a.__proto__);
+// console.log(a.__proto__);
 
-console.log(a.__proto__.__proto__); //null se inherit hota hai
+// console.log(a.__proto__.__proto__); //null se inherit hota hai
 
-console.log(c.__proto__==b);
-console.log(c.__proto__.__proto__==a);
-console.log(a.__proto__==Object.prototype);
+// console.log(c.__proto__==b);
+// console.log(c.__proto__.__proto__==a);
+// console.log(a.__proto__==Object.prototype);
 
 //----------------------------------------------------------//
-let d= true;
-console.log(d.__proto__);
-console.log(d.__proto__.__proto__);
+// let d= true;
+// console.log(d.__proto__);
+// console.log(d.__proto__.__proto__);
 
-let e=10;
+// let e=10;
 
-console.log(e.__proto__);
-console.log(e.__proto__.__proto__);
+// console.log(e.__proto__);
+// console.log(e.__proto__.__proto__);
 
-let f="Hello";
-console.log(f.__proto__);
-console.log(f.__proto__.__proto__);
+// let f="Hello";
+// console.log(f.__proto__);
+// console.log(f.__proto__.__proto__);
 
 
 //-----------------------------------------------------------//

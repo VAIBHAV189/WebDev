@@ -6,19 +6,15 @@ let todos=[];
 app.get('/todos',(req,res)=>{
     res.send(todos);
 });
-//Updation 
 
-
-//Deletion
-
-
-
+//addToDo
 app.get('/addtodo',(req,res)=>{
     todos.push(req.query.newtodo);
     // res.redirect('/todos');  
     res.send('success');
 })
 
+//Deletion
 app.get('/deletetodo',(req,res)=>
 {
     let index=-1;
@@ -41,6 +37,7 @@ app.get('/deletetodo',(req,res)=>
     res.send(message);
 })
 
+//Updation 
 app.get('/updatetodo',(req,res)=>{
     let purana=req.query.purana;
     let naya = req.query.naya;

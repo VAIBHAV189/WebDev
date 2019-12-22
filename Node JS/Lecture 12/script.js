@@ -11,5 +11,8 @@ console.log(global.global.global==global);//circular dependency exists
 
 console.log(this==global);
 
+console.log(this);
+
 // console.log(process);
+
 console.log(global.process==process);

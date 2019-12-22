@@ -47,7 +47,6 @@ $(()=>
                                 })
 
                         )
-
                 )
             }
         })
@@ -55,9 +54,9 @@ $(()=>
     
     refreshTodos()
     addtodo.click(()=>{
-        let val = newtodo.val();
+        let value = newtodo.val();
         newtodo.val("");
-        $.get(`/addtodo?newtodo=${val}`,(data)=>{
+        $.get(`/addtodo?newtodo=${value}`,(data)=>{
             if(data == 'success') {
                 refreshTodos();
             }

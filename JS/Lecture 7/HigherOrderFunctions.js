@@ -1,6 +1,6 @@
 //-----------------------------------------//
 // function outerFun(anotherFun){
-//     console.log('this is outer fun '+anotherFun;
+//     console.log('this is outer fun '+anotherFun);
 // }
 
 // function innerFun(){
@@ -9,7 +9,7 @@
 
 // outerFun(); // this is outer fun undefined
 
-//Function is also data type and it can be also passed as an argument
+// //Function is also data type and it can be also passed as an argument
 
 // outerFun(innerFun); //Poora funcn as it is jayega 
 // outerFun(innerFun()); //pehle innerFun execute hoga. Ye innerFun undefined return kar raha hai isliye this is outer fun undefined ayega
@@ -32,16 +32,16 @@
 //----------------------------------------------//
 
 
-function outerFun()
-{
-    console.log('this is outerFun');
-    function newFun()
-    {
-        console.log('This is a new fun');
-    }
-    return newFun;
-}
-let fun=outerFun();
-fun();
+// function outerFun()
+// {
+//     console.log('this is outerFun');
+//     function newFun()
+//     {
+//         console.log('This is a new fun');
+//     }
+//     return newFun;
+// }
+// let fun=outerFun();
+// fun();
 
 //----------------------------------------------//

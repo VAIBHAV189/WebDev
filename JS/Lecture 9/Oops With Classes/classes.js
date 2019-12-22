@@ -1,4 +1,4 @@
-//You cannot define private members in classes by this method) so this is a disadvantage
+//You cannot define private members in classes by this method so this is a disadvantage
 
 class Person
 {
@@ -47,7 +47,6 @@ let p1=new Person('Ron Weasley',19);
 
 console.log(p1);
 console.log(p);
-
 console.log(p1.getFirstName());
 // console.log(p.getLastName());
 console.log(p.lastName);  //You dont need to call getters i.e dont use paranthesis as they are computed automatically

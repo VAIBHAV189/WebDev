@@ -1,4 +1,4 @@
-//----------------First way-----------------------//
+//----------------First way------------------//
 // if(typeof(window)=='undefined')
 // {
 //     const lib=require('./lib');
@@ -10,7 +10,7 @@
 // }
 
 
-//-----------------------Second way----------------//
+//----------------Second way----------------//
 let lib;
 if(typeof window=='undefined')
 {
